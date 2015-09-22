@@ -13,15 +13,15 @@ This is empty on purpose! Your code to build the resume will go here.
  var bio = {
  	"name" : "Miguel Añez",
  	"role" : "Web Developer",
-  "biopic": "images/fry.jpg",
+  "biopic": "images/perfil.jpg",
  	"Contact" : {
  		"email" : "miguelrko@hotmail.com",
- 		"mobile": "0412-6746161",
+ 		"mobile": "+58 412-6746161",
  		"github": "miguelrko",
  		"twitter": "miguelrko8",
  		"location": "Venezuela"
  	},
- 	"welcomeMessage" : "Hello",
+ 	"welcomeMessage" : "Welcome to my Resume Page, Hope you enjoy it.",
  	"skills"  : [
  		"OOP",
  		"Java",
@@ -30,7 +30,7 @@ This is empty on purpose! Your code to build the resume will go here.
     "CSS3",
     "Teamwork",
     "Self-Taught",
-    "Good Communication"
+    "Responsible"
  	]
  }
 
@@ -105,7 +105,7 @@ This is empty on purpose! Your code to build the resume will go here.
  			"title" : "javascript syntax",
  			"school" : "udacity",
  			"date"  : "2015",
- 			"url"	: "udacity.com", 
+ 			"url"	: "http://www.udacity.com", 
  		}
  	]
  }
@@ -188,7 +188,6 @@ bio.display = function(){
   $("#footerContacts:last").append(formattedgithub);
   var formattedlocation = HTMLlocation.replace("%data%",bio.Contact.location);
   $("#footerContacts:last").append(formattedlocation);
-  console.log(formattedmobile);
 }
 
 bio.display();
@@ -233,7 +232,7 @@ education.display = function(){
     $(".education-entry:last").append(formattedonlineschool);
     var formattedonlinedates = HTMLonlineDates.replace("%data%",education.onlineCourses[cour].date);
     $(".education-entry:last").append(formattedonlinedates);
-    var formattedonlineurl = HTMLonlineURL.replace("%data%",education.onlineCourses[cour].url);
+    var formattedonlineurl = HTMLonlineURL.replace(/%data%/g,education.onlineCourses[cour].url);
     $(".education-entry:last").append(formattedonlineurl);
   }
 }

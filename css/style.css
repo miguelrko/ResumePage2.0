@@ -14,6 +14,11 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
+h1{
+  font-family: 'Tangerine', cursive;
+  /*font-size: 30px;*/
+}
+
 .clear-fix {
   overflow: auto;
 }
@@ -34,7 +39,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #F5AE23;
   line-height: 29px;
   padding: 10px;
 }
@@ -67,22 +72,24 @@ h5 {
   font-size: 14px;
   color: #999;
   line-height: 16px;
-  float: left;
+ /* float: left;*/
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  color: #E7AE23;
   line-height: 16px;
   float: right;
 
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
-  line-height: 21px;
+  line-height: 8px;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 10px #f5ae23;
 }
 
 a {
@@ -93,10 +100,17 @@ a {
 }
 
 .welcome-message {
+  font-size: 30px;
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
+  text-shadow: 3px 3px 8px #f5ae23;
+}
+
+#role{
+  font-style: italic;
+  font-weight: bold;
 }
 
 #skills-h3 {
@@ -104,8 +118,22 @@ a {
   display: none;
 }
 
+#skills{
+  font-style: italic;
+  text-shadow: 3px 3px 8px #f5ae23;
+}
+
+#move{
+    -ms-transform: rotate(10deg); /* IE 9 */
+  /*  -ms-transform-origin: 20% 40%; /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  /*  -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+ /* transform-origin: 20% 40%;*/
+}
+
 .orange {
-  background-color: #f5ae23;
+  background-color: #A5A3A3;
 }
 
 .orange-text {
@@ -118,7 +146,15 @@ a {
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background: -webkit-radial-linear-gradient(to bottom, #A7A5A5, #1B1818); /* Safari 5.1 to 6.0 */
+  background: -o-radial-linear-gradient(to bottom, #A7A5A5, #1B1818); /* For Opera 11.6 to 12.0 */
+  background: -moz-linear-gradient(to bottom, #A7A5A5, #1B1818); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #A7A5A5, #1B1818);
+  padding-bottom: 10px;
+  clear:both;
+}
+.gray2{
+  background-color: #1B1818;
   padding-bottom: 10px;
   clear:both;
 }
@@ -129,7 +165,29 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+
+  background: -webkit-radial-linear-gradient(to bottom, #A7A5A5, #1B1818); /* Safari 5.1 to 6.0 */
+  background: -o-radial-linear-gradient(to bottom, #A7A5A5, #1B1818); /* For Opera 11.6 to 12.0 */
+  background: -moz-linear-gradient(to bottom, #A7A5A5, #1B1818); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #A7A5A5, #1B1818);
+}
+
+#projects{
+  background: -webkit-linear-gradient(to top, #A7A5A5, #1B1818);
+  background: -o-linear-gradient(to top, #A7A5A5, #1B1818);
+  background: -moz-linear-gradient(to top, #A7A5A5, #1B1818);
+  background: linear-gradient(to top, #A7A5A5, #1B1818);
+}
+
+#education{
+}
+
+.education-entry{
+}
+
+#ptitle{
+  color: black;
+  font-weight: 700;
 }
 
 .flex-box {
@@ -154,6 +212,7 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  border-radius: 50%;
 }
 
 img {
@@ -204,6 +263,7 @@ span {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
+  background: linear-gradient(to top, #A7A5A5, #1B1818);
 }
 
 @media only screen and (min-width: 750px) {
@@ -211,4 +271,13 @@ span {
   .biopic {
     display: block;
   }
+}
+
+
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
 }
