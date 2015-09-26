@@ -1,0 +1,134 @@
+html { 
+  background: url(../images/code1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  display: flex;
+  font-family: 'Chango', cursive;
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+
+h2{
+ /* font-family: 'Tangerine', cursive;*/
+ font-family: 'Chango', cursive;
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+[class*="fontawesome-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'FontAwesome', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+  font-size: 2em;
+}
+
+
+#infobar{
+  width: 100%;
+}
+
+#fullcontent{
+  width: 80%;
+  margin:0 10%; 
+}
+
+#name{
+  margin-bottom: 0%; 
+  font-family: 'Tangerine', cursive;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+
+
+#role{
+  padding-left: 30%;
+}
+
+#skills{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-bottom: 10%;
+  font-size: 0.79em;
+}
+
+#move{
+    -ms-transform: rotate(10deg); /* IE 9 */
+  /*  -ms-transform-origin: 20% 40%; /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  /*  -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+ /* transform-origin: 20% 40%;*/
+}
+
+#contact{
+
+}
+
+#stickyside{
+  background:#eee; 
+ /* border:2px solid #666; */
+  border-right: 2px solid #666;  
+  left:0; 
+  position:fixed; 
+  width:20%;
+  height: 100%; 
+  top:0;
+}
+
+.center{
+  text-align: center;
+}
+
+#contentside{
+   padding-left: 20%;
+   width:80%;
+}
+
+#message{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.form{
+  background-color: white;
+  border:1px solid #a1a1a1; 
+  box-shadow: 3px 3px 15px black;
+  margin: 5px 0;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  opacity: 0.9;
+}
+
+.biopic {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 50vh;
+  width: 100%;
+  padding-bottom: 5%;
+}
