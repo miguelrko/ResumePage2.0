@@ -37,25 +37,25 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<div id="ptitle">%data%</div>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectStart = '<div class="project-entry black-text"></div>';
+var HTMLprojectTitle = '<h3 id="ptitle">%data%</h3>';
+var HTMLprojectDates = '<div class="date-text black-text">%data%</div>';
+var HTMLprojectDescription = '<p><span class="white-text">Description:</span> %data%</p>';
+var HTMLprojectImage = '<img class="pic" src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<div>%data%</div>';
-var HTMLschoolDegree = '<em> %data%</em>';
+var HTMLschoolStart = '<div class="education-entry black-text"></div>';
+var HTMLschoolName = '<div id="schoolname">%data% - %data2% </div>';
+var HTMLschoolDegree = '<div> %data%</div>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<p><br>Major: %data%</p>';
+var HTMLschoolMajor = '<div><span class="white-text">Major:</span> %data%</div>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineStart = '<div class="education-entry"></div>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineClasses = '<h3 class="black-text">Online Classes</h3>';
+var HTMLonlineStart = '<div class="education-entry black-text"></div>';
+var HTMLonlineTitle = '<div>%data%</div>';
+var HTMLonlineSchool = '<div class="location-text">%data%</div>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="%data%">%data%</a>';
+var HTMLonlineURL = '<a href="%data%">Go to Course Page</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';

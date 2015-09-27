@@ -48,8 +48,11 @@
  		{
  			"title" : "Experimental Design Library in Galatea. Prototype",
  			"dates" : "2015",
- 			"description" : "Degree Final Project, developed in Java.",
- 			"images"	  : "images/197x148.gif"
+ 			"description" : "Degree Final Project. A prototype GUI developed in Java to work with an existing simulation platform.",
+ 			"images"	  : ["images/proyect1.png",
+                      "images/proyect1.5.png",
+                      "images/proyect2.png"
+                    ]
  		}
  	]
  }
@@ -66,10 +69,10 @@
  			"url"  : "ula.ve"
  		},
  		{
- 			"name" : "Unda",
+ 			"name" : "Liceo U.E.N Unda",
  			"location" : "Guanare, Venezuela",
- 			"degree"   : "highschool",
- 			"majors"   :["none"
+ 			"degree"   : "Highschool",
+ 			"majors"   :["Science"
  			],
  			"dates"	   : "2002-2007",
  			"url": "none"
@@ -78,11 +81,35 @@
  ,
  	"onlineCourses":[
  		{
- 			"title" : "javascript syntax",
- 			"school" : "udacity",
- 			"date"  : "2015",
- 			"url"	: "http://www.udacity.com", 
- 		}
+ 			"title" : "Introduction to Mobile Application Development using Android",
+ 			"school" : "edX",
+ 			"date"  : "July, 2015",
+ 			"url"	: "https://courses.edx.org/courses/course-v1:HKUSTx+COMP107x+2016_T1/info", 
+ 		},
+    {
+      "title" : "Intro to HTML and CSS",
+      "school" : "Udacity",
+      "date"  : "August, 2015",
+      "url" : "https://www.udacity.com/course/intro-to-html-and-css--ud304", 
+    },
+    {
+    "title" : "Responsive Web Design Fundamentals",
+      "school" : "Udacity",
+      "date"  : "August, 2015",
+      "url" : "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893", 
+    },
+    {
+    "title" : "Responsive Images",
+      "school" : "Udacity",
+      "date"  : "August, 2015",
+      "url" : "https://www.udacity.com/course/responsive-images--ud882", 
+    },
+    {
+    "title" : "JavaScript Basics",
+      "school" : "Udacity",
+      "date"  : "September, 2015",
+      "url" : "https://www.udacity.com/course/javascript-basics--ud804", 
+    },
  	]
  }
 
@@ -134,8 +161,10 @@ project.display = function(){
     $(".project-entry:last").append(formattedPDates);
     var formattedPDescription = HTMLprojectDescription.replace("%data%",project.projects[proj].description);
     $(".project-entry:last").append(formattedPDescription);
-    var formattedPImage = HTMLprojectImage.replace("%data%",project.projects[proj].images);
-    $(".project-entry:last").append(formattedPImage);
+    for(img in project.projects[proj].images){
+      var formattedPImage = HTMLprojectImage.replace("%data%",project.projects[proj].images[img]);
+      $(".project-entry:last").append(formattedPImage);
+    }
   }
 }
 
@@ -146,9 +175,8 @@ education.display = function(){
   for(school in education.schools){
     $("#education").append(HTMLschoolStart);
     var formattedschoolname = HTMLschoolName.replace("%data%", education.schools[school].name);
+    formattedschoolname = formattedschoolname.replace("%data2%", education.schools[school].degree);
     $(".education-entry:last").append(formattedschoolname);
-    var formattedschooldegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-    $(".education-entry:last").append(formattedschooldegree);
     var formattedschooldates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
     $(".education-entry:last").append(formattedschooldates);
     var formattedschoollocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
@@ -161,10 +189,10 @@ education.display = function(){
     $("#education").append(HTMLonlineStart);
     var formattedonlinetitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[cour].title);
     $(".education-entry:last").append(formattedonlinetitle);
-    var formattedonlineschool = HTMLonlineSchool.replace("%data%",education.onlineCourses[cour].school);
-    $(".education-entry:last").append(formattedonlineschool);
     var formattedonlinedates = HTMLonlineDates.replace("%data%",education.onlineCourses[cour].date);
     $(".education-entry:last").append(formattedonlinedates);
+    var formattedonlineschool = HTMLonlineSchool.replace("%data%",education.onlineCourses[cour].school);
+    $(".education-entry:last").append(formattedonlineschool);
     var formattedonlineurl = HTMLonlineURL.replace(/%data%/g,education.onlineCourses[cour].url);
     $(".education-entry:last").append(formattedonlineurl);
   }
