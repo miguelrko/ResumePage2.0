@@ -13,11 +13,11 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span id="role">%data%</span><hr/>';
+var HTMLheaderRole = '<span id="role">%data%</span>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<div><span class="orange-text">mobile: </span><span class="white-text"> %data%</span></div>';
-var HTMLemail = '<div><span class="orange-text">email: </span><span class="white-text"> %data%</span></div>';
+var HTMLmobile = '<div><span class="white-text">mobile: </span><span class="black-text"> %data%</span></div>';
+var HTMLemail = '<div><span class="white-text">email: </span><span class="black-text"> %data%</span></div>';
 var HTMLtwitter = ' <a href="https://twitter.com/%data%" class="fontawesome-twitter"></a>';
 var HTMLgithub = ' <a href="https://github.com/%data%" class="fontawesome-github-alt"></a>';
 var HTMLlinkedin = ' <a href="https://www.linkedin.com/pub/%data%/105/5b2/504" class="fontawesome-linkedin"></a>';
@@ -25,10 +25,10 @@ var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
-var HTMLwelcomeMsg = '<div id="message"><span class="welcome-message">%data%</span></div>';
+var HTMLwelcomeMsg = '<div id="message"><span class="black-text">%data%</span></div>';
 
-var HTMLskillsStart = '<h3>Skills at a Glance:</h3><div id="skills"></div>';
-var HTMLskills = '<p id="move"><span class="white-text">%data%</span></p>';
+var HTMLskillsStart = '<h3 id="skillstitle">Skills at a Glance:</h3><div id="skills"></div>';
+var HTMLskills = '<p id="move"><span class="black-text">%data%</span></p>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
