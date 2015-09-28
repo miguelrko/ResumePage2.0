@@ -134,7 +134,7 @@ hr{
 
  /* background-color: #37E2D3;*/
   background: url(../images/icon.jpg) no-repeat right fixed;
- /* background-size: 75% 100%; media querie for small devices*/
+  background-size: 75% 100%;
   border:1px solid #a1a1a1; 
   box-shadow: 5px 5px 10px black;
   margin: 5px 0;
@@ -142,6 +142,61 @@ hr{
   padding-left: 2%;
   padding-bottom: 2%;
  /* opacity: 0.9;*/
+}
+
+@media screen and (max-width: 750px){
+  .form{
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 550px){
+  #role{
+    font-size: 0.5em;
+  }
+  #name{
+    font-size: 1.2em;
+  }
+  #message{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 330px){
+  #message{
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 628px){
+  #skillstitle{
+    display: none;
+  }
+}
+
+#mail{
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+#mobil{
+  display: block;
+}
+
+@media screen and (max-width: 650px){
+  #mail, #mobil{
+    font-size: 0.2em;
+  }
+  #move{
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1125px){
+  #mail, #mobil{
+    font-size: 0.5em;
+  }
 }
 
 .white-text{

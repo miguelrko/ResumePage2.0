@@ -16,8 +16,8 @@ var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span id="role">%data%</span>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<div><span class="white-text">mobile: </span><span class="black-text"> %data%</span></div>';
-var HTMLemail = '<div><span class="white-text">email: </span><span class="black-text"> %data%</span></div>';
+var HTMLmobile = '<div id="mobil"><span class="white-text">mobile: </span><span class="black-text"> %data%</span></div>';
+var HTMLemail = '<div id="mail"><span class="white-text">email: </span><span class="black-text"> %data%</span></div>';
 var HTMLtwitter = ' <a href="https://twitter.com/%data%" class="fontawesome-twitter"></a>';
 var HTMLgithub = ' <a href="https://github.com/%data%" class="fontawesome-github-alt"></a>';
 var HTMLlinkedin = ' <a href="https://www.linkedin.com/pub/%data%/105/5b2/504" class="fontawesome-linkedin"></a>';
